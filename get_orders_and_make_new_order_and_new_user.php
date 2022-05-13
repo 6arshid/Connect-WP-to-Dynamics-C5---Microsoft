@@ -58,7 +58,6 @@ if($shop_order_all_results != null){
 
     foreach($shop_order_all_results as $shop_order_dsresult_row){
        
-        $_SESSION["post_id"] = $shop_order_dsresult_row['ID'];
         
         $order_id = $shop_order_dsresult_row['ID'];
         $sql_get_order_info_billing_email = "SELECT * FROM wp_postmeta WHERE post_id = $order_id";
