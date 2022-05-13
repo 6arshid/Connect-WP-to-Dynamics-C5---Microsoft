@@ -102,7 +102,7 @@ if($shop_order_all_results != null){
         }
         else{
         $my_user_id = '0000'.$order_id;
-        $_SESSION["my_user_id"] = $my_user_id;
+
 
         $filename = 'Kunder.csv';
         $handle = fopen($filename, "a");
