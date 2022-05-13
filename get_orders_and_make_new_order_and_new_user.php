@@ -91,7 +91,7 @@ if($shop_order_all_results != null){
             }
             }
         // add users to file
-        $customers_list_file = 'Kunder.csv';
+        $customers_list_file = 'Customers.csv';
         $searchfor = $customer_email;
         header('Content-Type: text/plain');
         $contents = file_get_contents($customers_list_file);
@@ -103,7 +103,7 @@ if($shop_order_all_results != null){
         $my_user_id = '0000'.$order_id;
 
 
-        $filename = 'Kunder.csv';
+        $filename = 'Customers.csv';
         $handle = fopen($filename, "a");
         if ($handle === false) {
             die('Error opening the file ' . $filename);
